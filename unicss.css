@@ -851,5 +851,97 @@ img {
   border-radius: 8px;
 }
 
-/* ________________________ Election Review css __________________ */
+/* ________________________ Election vote Review css __________________ */
 
+.last {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .election_cards {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .card {
+      display: flex;
+      padding: 20px;
+      gap: 16px;
+      flex-direction: column;
+      background-color: var(--white);
+      border: 1px solid var(--stroke);
+      border-radius: 14px;
+    }
+
+    .card label {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--mtext);
+    }
+
+    .candidatelist {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .candidate {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .candidate_name {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--mtext);
+    }
+
+
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+
+
+    .candidate input {
+      width: 20px;
+      height: 20px;
+    }
+
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .last a .confirm {
+      height: 48px;
+      width: 122px;
+      background-color: var(--smain);
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--white);
+      border-style: none;
+      border-radius: 8px;
+    }
+
+    .last a .back {
+      height: 48px;
+      width: 122px;
+      background-color: var(--smain);
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--white);
+      border-style: none;
+      border-radius: 8px;
+    }
+
+    .last p {
+      color: red;
+      font-size: 13px;
+      font-weight: 500;
+    }
