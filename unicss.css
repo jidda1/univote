@@ -348,6 +348,10 @@ a {
   justify-content: center;
 }
 
+.buttonss:hover {
+        background-color: #1b52c9;
+      }
+
 /* --------------- HISTORY ------------- */
 
 .history {
@@ -632,7 +636,7 @@ th {
   transition: 0.1s;
 }
 
-.content {
+.profileContent {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -726,6 +730,10 @@ th {
   align-items: center;
   justify-content: center;
 }
+
+.abutton:hover {
+        background-color: #1b52c9;
+      }
 
 /* ________________________ Election details css __________________ */
 
@@ -851,12 +859,17 @@ img {
   border-radius: 8px;
 }
 
+.lastSection a button:hover {
+        background-color: #1b52c9;
+      }
+
 /* ________________________ Election vote Review css __________________ */
 
 .buttons {
   display: flex;
   justify-content: space-between;
 }
+
 
 .lastSection a .confirm {
   height: 48px;
@@ -941,3 +954,7 @@ img {
   border-style: none;
   border-radius: 8px;
 }
+
+.successBodyContent a .confirm:hover {
+        background-color: #1b52c9;
+      }
