@@ -958,3 +958,54 @@ img {
 .successBodyContent a .confirm:hover {
         background-color: #1b52c9;
       }
+
+      /* ________________________ Election main result css __________________ */
+
+      
+    .imgc {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .mid{
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      width: 100%;
+    }
+
+    .card1 {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      padding: 16px;
+      background-color: var(--white);
+      border: 1px solid var(--stroke);
+      border-radius: 16px;
+    }
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+    }
+    .card1 p{
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--mtext);
+    }
+
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    .resultBar {
+      height: fit-content;
+      border-radius: 5px;
+      border: 1px solid var(--stroke);
+      overflow: hidden;
+      width: 100%;
+    }
+
