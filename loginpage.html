@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --pmain: #0b1f3a;
+        --smain: #2563eb;
+        --stroke: #e4e7ec;
+        --white: #ffffff;
+        --bg: #f6f8fc;
+        --mtext: #172033;
+        --stext: #667085;
+        --gtext: #16a34a;
+      }
+      body {
+        align-content: center;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background-color: #f6f8fc;
+        margin: 0px;
+      }
+      .inter-uniquifier > {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+      }
+      * {
+        font-family: inter;
+      }
+
+      p {
+        margin: 0px;
+      }
+      .body {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: fit-content;
+        gap: 24px;
+        padding: 32px;
+        background-color: inherit;
+        border-radius: 16px;
+        border-color: #e4e7ec;
+        box-shadow: 0px 0px 70px #c5cad3;
+      }
+
+      .header {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+      }
+      .uppertext {
+        font-size: 30px;
+        font-weight: bold;
+        color: #172033;
+        margin: 0px;
+      }
+
+      .undertext {
+        font-size: 14px;
+        font-weight: normal;
+        color: #667085;
+        margin: 0px;
+      }
+
+      input {
+        padding: 16px;
+        font-size: 13px;
+        font-weight: normal;
+        border-radius: 8px;
+        width: 100%;
+        box-sizing: border-box;
+        color: #172033;
+        background-color: white;
+        border: 1px solid #e4e7ec;
+      }
+      span {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 4px;
+      }
+      input[type="checkbox"] {
+        width: 12px;
+        height: 12px;
+        margin: 0px;
+      }
+
+      input:hover {
+        border-color: #667085;
+      }
+
+      input:focus {
+        border-color: #1b52c9;
+        outline-color: #1b52c9;
+      }
+
+      .middle {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .downn {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .two {
+        display: flex;
+        justify-content: space-between;
+      }
+      .a {
+        font-size: 12px;
+        color: #667085;
+      }
+      a {
+        font-size: 12px;
+        text-decoration: none;
+        color: #2563eb;
+      }
+
+      .text {
+        color: #172033;
+        font-size: 12px;
+        font-weight: 500;
+      }
+
+      .inm {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .button {
+        color: white;
+        background-color: #2563eb;
+        border: none;
+        border-radius: 8px;
+        padding: 10px;
+        width: 100%;
+      }
+
+      .button:hover {
+        background-color: #1b52c9;
+      }
+
+      .button:active {
+        background-color: #133e9a;
+      }
+
+      .ip {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      #perror,
+      #ugerror {
+        color: red;
+        font-size: 10px;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="body" id="forminput">
+      <div class="header">
+        <p class="uppertext">Welcome Back</p>
+        <p class="undertext">Sign in to your verified account</p>
+      </div>
+      <div class="middle">
+        <div class="inm">
+          <label for="uginput" class="text"
+            >Enter you matriculation number</label
+          >
+          <div class="ip">
+            <input
+              type="text"
+              class="up"
+              id="uginput"
+              placeholder="enter your matriculation number"
+            />
+            <small id="ugerror">Enter your Matriculation Number</small>
+          </div>
+        </div>
+        <div class="downn">
+          <div class="inm">
+            <label for="passwordinput" class="text">Enter your Password</label>
+            <div class="ip">
+              <input
+                class="down"
+                type="password"
+                id="passwordinput"
+                placeholder="enter your password"
+              />
+              <small id="perror">Enter your Password</small>
+            </div>
+          </div>
+          <div class="two">
+            <span>
+              <input type="checkbox" id="checkinput" />
+              <label for="checkinput" class="a">Remember me</label>
+            </span>
+            <a href="" id="useless">Forgot password</a>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="button">Login</button>
+    </form>
+
+    <!----------------------- SCRIPT ----------------------->
+
+    <script>
+      const uginput = document.getElementById("uginput");
+      const ugerror = document.getElementById("ugerror");
+      const passwordinput = document.getElementById("passwordinput");
+      const perror = document.getElementById("perror");
+      const form = document.getElementById("forminput");
+      const rme = document.getElementById("checkinput");
+      const fp = document.getElementById("useless");
+
+      function val() {
+        let ugvalue = uginput.value.trim();
+        let pvalue = passwordinput.value.trim();
+        let valid = true;
+
+        if (ugvalue === "") {
+          ugerror.style.display = "block";
+          uginput.style.borderColor = "red";
+          valid = false;
+        }
+        if (pvalue === "") {
+          perror.style.display = "block";
+          passwordinput.style.borderColor = "red";
+          valid = false;
+        }
+        return valid;
+      }
+
+      uginput.addEventListener("input", (e) => {
+        ugerror.style.display = "none";
+        uginput.style.borderColor = "";
+      });
+
+      passwordinput.addEventListener("input", (e) => {
+        perror.style.display = "none";
+        passwordinput.style.borderColor = "";
+      });
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        if (!val()){
+          return;
+        }
+
+        if (rme.checked) {
+          localStorage.setItem("MATRIC NUMBER", uginput.value);
+          localStorage.setItem("PASSWORD", passwordinput.value);
+        } 
+        form.reset();
+        window.location.href = "test.html";
+      });
+    </script>
+  </body>
+</html>

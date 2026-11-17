@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <link rel="stylesheet" href="unicss.css">
+
+</head>
+
+<body>
+
+  <!------------------------------- SIDEBAR -------------------------->
+
+  <!------------ SIDE BAR HEADER ------------>
+
+  <div class="sideBar" id="sidebar">
+    <div class="sideBarHeader">
+      <p class="sideHeadText">◈ UniVote</p>
+      <p class="sideSecondText">Student portal</p>
+    </div>
+
+    <!------------ SIDE BAR LINKS ------------>
+
+    <div class="sideBarNav">
+      <a href="test.html" class="navLink">Dashboard</a>
+      <a href="elections.html" class="navLink">Elections</a>
+      <a href="" class="navLink active">Voting Activity</a>
+      <a href="results.html" class="navLink">Results</a>
+      <a href="profile.html" class="navLink">Profile</a>
+      <a href="reset password.html" class="navLink">Settings</a>
+    </div>
+  </div>
+
+  <!---------------------------- BODY WITH NAV BAR ---------------------------->
+
+  <div class="body">
+
+    <!---------------------- TOP NAV BAR ---------------------->
+
+    <div class="topNav">
+
+      <!------------ TOP NAV COLLAPSED BUTTON ------------>
+
+      <button class="menuBtn" id="menuBtn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <!------------ TOP NAV CURRENT PAGE NAME ------------>
+
+      <div class="pageName">Voting Activity</div>
+
+      <!------------ TOP NAV PROFILE ACCOUNT ------------>
+
+      <div class="account">
+        <button class="accountBtn" id="profileButton">
+          <div class="logo">AD</div>
+          <div class="nameTag">
+            <span class="name">Adam Jidda</span>
+            <span class="tag">Student</span>
+          </div>
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+
+        <!------------ TOP NAV DROPDOWN FIELD ------------>
+
+        <div class="accountDropdown" id="profileDropdown">
+          <div class="twoList">
+            <a href="profile.html" class="linksss"> <i class="fa-regular fa-user"></i> My Profile </a>
+          </div>
+          <a href="#" class="dropdownLogout"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------------- MAIN BODY DESIGN CONTENT --------------------------->
+
+    <div class="bodyContent">
+
+      <!-- ------------- HEADING TEXT ---------- -->
+
+      <div class="headText">
+        <p class="welcome">My voting activity</p>
+        <p class="category">
+          <span>Candidate choices are not displayed.</span>
+        </p>
+      </div>
+
+      <!-- ------------- CARDS HOLDER ---------- -->
+
+      <div class="cardsHolder">
+        <div class="card">
+          <span class="top">Participated</span>
+          <span class="numbers">2</span>
+        </div>
+
+        <div class="card">
+          <span class="top">Pending</span>
+          <span class="numbers">1</span>
+        </div>
+
+        <div class="card">
+          <span class="top">Completed</span>
+          <span class="numbers">1</span>
+        </div>
+      </div>
+
+
+      <!-- -----------------Election history------- -->
+
+      <div class="electionHistory">
+        <div class="title">Election History</div>
+        <table>
+          <tr>
+            <th>Election</th>
+            <th class="mid">Status</th>
+            <th class="end">Date</th>
+          </tr>
+          <tr>
+            <td>Cs department President</td>
+            <td class="mid"><span class="actionText">Completed</span></td>
+            <td class="end">oct, 10th 2025</td>
+          </tr>
+          <tr>
+            <td>Faculty of Science President</td>
+            <td class="mid"><span class="actionText">Completed</span></td>
+            <td class="end">oct, 10th 2025</td>
+          </tr>
+        </table>
+      </div>
+
+
+    </div>
+
+    <!----------------------- SCRIPT ----------------------->
+    <script src="uniscript.js"></script>
+
+</body>
+
+</html>
