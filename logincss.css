@@ -1,0 +1,287 @@
+/* ______general css__________ */
+:root {
+  --pmain: #0b1f3a;
+  --smain: #2563eb;
+  --stroke: #e4e7ec;
+  --white: #ffffff;
+  --bg: #f6f8fc;
+  --mtext: #172033;
+  --stext: #667085;
+  --gtext: #16a34a;
+  --error: #dc3545;
+}
+body {
+  align-content: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f8fc;
+  margin: 0px;
+}
+.inter-uniquifier > {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+* {
+  font-family: inter;
+  margin: 0px;
+}
+
+
+.body {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: fit-content;
+  gap: 24px;
+  padding: 32px;
+  background-color: inherit;
+  border-radius: 16px;
+  border-color: #e4e7ec;
+  box-shadow: 0px 0px 70px #c5cad3;
+}
+/* ______login page css______ */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+}
+.uppertext {
+  font-size: 30px;
+  font-weight: bold;
+  color: #172033;
+  margin: 0px;
+}
+
+.undertext {
+  font-size: 14px;
+  font-weight: normal;
+  color: #667085;
+  margin: 0px;
+}
+
+input {
+  padding: 16px;
+  font-size: 13px;
+  font-weight: normal;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  color: #172033;
+  background-color: white;
+  border: 1px solid #e4e7ec;
+}
+span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+input[type="checkbox"] {
+  width: 12px;
+  height: 12px;
+  margin: 0px;
+}
+
+input:hover {
+  border-color: #667085;
+}
+
+input:focus {
+  border-color: #1b52c9;
+  outline-color: #1b52c9;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.downn {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.two {
+  display: flex;
+  justify-content: space-between;
+}
+.a {
+  font-size: 12px;
+  color: #667085;
+}
+.link {
+  font-size: 12px;
+  text-decoration: none;
+  color: #2563eb;
+}
+
+.continuee{
+  text-decoration: none;
+}
+
+
+.text {
+  color: #172033;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.inm {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.button {
+  color: white;
+  background-color: #2563eb;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #1b52c9;
+}
+
+.button:active {
+  background-color: #133e9a;
+  transform: translateY(0);
+}
+
+.ip {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#perror,
+#ugerror {
+  color: var(--error);
+  font-size: 10px;
+  display: none;
+}
+
+/* _________forgot password css_________ */
+
+
+.forgotContainer {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.page-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.email-icon {
+  width: 58px;
+  height: 58px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--pmain);
+  background: var(--stroke);
+}
+
+.email-icon i {
+  font-size: 22px;
+}
+
+
+.message {
+  display: none;
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.message.error-message {
+  display: block;
+  color: #842029;
+  background: #f8d7da;
+  border: 1px solid #f1aeb5;
+}
+
+.message.success-message {
+  display: block;
+
+  color: #0f5132;
+
+  background: #d1e7dd;
+
+  border: 1px solid #a3cfbb;
+}
+
+
+.fBody {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        height: fit-content;
+        width: 100%;
+      }
+
+
+.helpBox{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.helpBox p{
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--mtext);
+}
+
+.pageFooter p{
+  font-size: 12px;
+  text-align: center;
+  color: var(--stext);
+}
+
+.helpFooter{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* ========================================
+   SPINNER
+======================================== */
+
+.spinner {
+  display: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+.button.loading .spinner {
+  display: block;
+}
+
+.button.loading #buttonText {
+  display: none;
+}
