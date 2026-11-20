@@ -1,213 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Verify Email | Final Year Project System</title>
-
-    <link rel="stylesheet" href="verify-otp.css">
-
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    >
+  <title>Verify Email</title>
+  <link rel="stylesheet" href="logincss.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
-    <main class="verify-page">
+      <div class="body">
+
+        <!-- Header -->
+        <div class="page-header">
+          <div class="email-icon">
+            <i class="fa-solid fa-envelope-circle-check"></i>
+          </div>
+          <p class="uppertext">Verify Your Email</p>
+          <p class="undertext">
+            We've sent a 6-digit verification
+            code to
+          </p>
+          <strong id="emailDisplay">
+            a***@gmail.com
+          </strong>
+        </div>
 
 
-        <!-- RIGHT CONTENT-->
+        <!-- OTP Form -->
+        <form class="otpForm">
+          <div class="otp-container">
+            <input type="text" class="otp-input" maxlength="1" inputmode="numeric" autocomplete="one-time-code"
+              autofocus>
+            <input type="text" class="otp-input" maxlength="1" inputmode="numeric">
+            <input type="text" class="otp-input" maxlength="1" inputmode="numeric">
+            <input type="text" class="otp-input" maxlength="1" inputmode="numeric">
+            <input type="text" class="otp-input" maxlength="1" inputmode="numeric">
+            <input type="text" class="otp-input" maxlength="1" inputmode="numeric">
+          </div>
 
-        <section class="verify-section">
+          <small class="error">sss</small>
 
-            <div class="verify-card">
+          <!-- Timer -->
+          <div class="timer-container">
+            <span>
+              Code expires in
+            </span>
+            <strong id="timer">
+              05:00
+            </strong>
+          </div>
 
+          <!-- Verify Button -->
+          <button type="submit" class="button">
+              Verify Code
+            <span id="spinner" class="spinner"></span>
+          </button>
 
-                <!-- Header -->
-                <div class="page-header">
-
-                    <div class="email-icon">
-
-                        <i class="fa-solid fa-envelope-circle-check"></i>
-
-                    </div>
-
-                    <h2>Verify Your Email</h2>
-
-                    <p>
-                        We've sent a 6-digit verification
-                        code to
-                    </p>
-
-                    <strong id="emailDisplay">
-                        a***@gmail.com
-                    </strong>
-
-                </div>
-
-
-                <!-- Message -->
-                <div
-                    id="message"
-                    class="message"
-                ></div>
+        </form>
 
 
-                <!-- OTP Form -->
-                <form id="otpForm">
+        <!-- Resend -->
+        <div class="resend-container">
+          <span>
+            Didn't receive the code?
+          </span>
 
-                    <div class="otp-container">
+          <button type="button">
+            Resend Code
+          </button>
 
-                        <input
-                            type="text"
-                            class="otp-input"
-                            maxlength="1"
-                            inputmode="numeric"
-                            autocomplete="one-time-code"
-                            autofocus
-                        >
+          <span class="resend-timer">
+            in 60s
+          </span>
 
-                        <input
-                            type="text"
-                            class="otp-input"
-                            maxlength="1"
-                            inputmode="numeric"
-                        >
-
-                        <input
-                            type="text"
-                            class="otp-input"
-                            maxlength="1"
-                            inputmode="numeric"
-                        >
-
-                        <input
-                            type="text"
-                            class="otp-input"
-                            maxlength="1"
-                            inputmode="numeric"
-                        >
-
-                        <input
-                            type="text"
-                            class="otp-input"
-                            maxlength="1"
-                            inputmode="numeric"
-                        >
-
-                        <input
-                            type="text"
-                            class="otp-input"
-                            maxlength="1"
-                            inputmode="numeric"
-                        >
-
-                    </div>
+        </div>
 
 
-                    <small
-                        id="otpError"
-                        class="error"
-                    ></small>
+        <!-- Help -->
+        <div class="helpBox">
+
+          <i class="fa-solid fa-circle-info"></i>
+
+          <p>
+            Check your inbox and spam folder
+            if you don't see the verification
+            code.
+          </p>
+        </div>
+
+        <!-- Footer -->
+        <div class="pageFooter">
+          <p>
+            Entered the wrong email?
+            <a href="forgot-password.html" class="link">
+              Change email
+            </a>
+          </p>
+        </div>
+
+      </div>
 
 
-                    <!-- Timer -->
-                    <div class="timer-container">
-
-                        <span>
-                            Code expires in
-                        </span>
-
-                        <strong id="timer">
-                            05:00
-                        </strong>
-
-                    </div>
-
-
-                    <!-- Verify Button -->
-                    <button
-                        type="submit"
-                        class="verify-button"
-                        id="verifyButton"
-                    >
-
-                        <span id="buttonText">
-                            Verify Code
-                        </span>
-
-                        <span
-                            id="spinner"
-                            class="spinner"
-                        ></span>
-
-                    </button>
-
-                </form>
-
-
-                <!-- Resend -->
-                <div class="resend-container">
-
-                    <span>
-                        Didn't receive the code?
-                    </span>
-
-                    <button
-                        type="button"
-                        id="resendButton"
-                        disabled
-                    >
-                        Resend Code
-                    </button>
-
-                    <span
-                        id="resendTimer"
-                        class="resend-timer"
-                    >
-                        in 60s
-                    </span>
-
-                </div>
-
-
-                <!-- Help -->
-                <div class="help-box">
-
-                    <i class="fa-solid fa-circle-info"></i>
-
-                    <p>
-                        Check your inbox and spam folder
-                        if you don't see the verification
-                        code.
-                    </p>
-
-                </div>
-
-
-                <!-- Footer -->
-                <div class="page-footer">
-
-                    <p>
-                        Entered the wrong email?
-                        <a href="forgot-password.html">
-                            Change email
-                        </a>
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <script src="script/verify-otp.js"></script>
+  <script src="script/verify-otp.js"></script>
 
 </body>
+
 </html>

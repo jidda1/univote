@@ -10,15 +10,17 @@
   --gtext: #16a34a;
   --error: #dc3545;
 }
+
 body {
   align-content: center;
   display: flex;
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background-color: #f6f8fc;
+  background-color: var(--bg);
   margin: 0px;
 }
+
 .inter-uniquifier > {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -28,7 +30,6 @@ body {
   font-family: inter;
   margin: 0px;
 }
-
 
 .body {
   position: absolute;
@@ -40,7 +41,7 @@ body {
   padding: 32px;
   background-color: inherit;
   border-radius: 16px;
-  border-color: #e4e7ec;
+  border-color: var(--stroke);
   box-shadow: 0px 0px 70px #c5cad3;
 }
 /* ______login page css______ */
@@ -54,14 +55,14 @@ body {
 .uppertext {
   font-size: 30px;
   font-weight: bold;
-  color: #172033;
+  color: var(--mtext);
   margin: 0px;
 }
 
 .undertext {
   font-size: 14px;
   font-weight: normal;
-  color: #667085;
+  color: var(--stext);
   margin: 0px;
 }
 
@@ -72,9 +73,9 @@ input {
   border-radius: 8px;
   width: 100%;
   box-sizing: border-box;
-  color: #172033;
+  color: var(--mtext);
   background-color: white;
-  border: 1px solid #e4e7ec;
+  border: 1px solid var(--stroke);
 }
 span {
   display: flex;
@@ -89,7 +90,7 @@ input[type="checkbox"] {
 }
 
 input:hover {
-  border-color: #667085;
+  border-color: var(--stext);
 }
 
 input:focus {
@@ -115,21 +116,20 @@ input:focus {
 }
 .a {
   font-size: 12px;
-  color: #667085;
+  color: var(--stext);
 }
 .link {
   font-size: 12px;
   text-decoration: none;
-  color: #2563eb;
+  color: var(--smain);
 }
 
-.continuee{
+.continuee {
   text-decoration: none;
 }
 
-
 .text {
-  color: #172033;
+  color: var(--mtext);
   font-size: 12px;
   font-weight: 500;
 }
@@ -143,7 +143,7 @@ input:focus {
 
 .button {
   color: white;
-  background-color: #2563eb;
+  background-color: var(--smain);
   border: none;
   border-radius: 8px;
   padding: 10px;
@@ -168,12 +168,18 @@ input:focus {
 #perror,
 #ugerror {
   color: var(--error);
-  font-size: 10px;
+  font-size: 12px;
   display: none;
 }
 
-/* _________forgot password css_________ */
+.error {
+  color: var(--error);
+  font-size: 12px;
+  display: none;
+  text-align: center;
+}
 
+/* _________forgot password css_________ */
 
 .forgotContainer {
   width: fit-content;
@@ -205,67 +211,40 @@ input:focus {
   font-size: 22px;
 }
 
-
-.message {
-  display: none;
-  padding: 12px 14px;
-  border-radius: 8px;
-  font-size: 13px;
-  margin-bottom: 20px;
-}
-
-.message.error-message {
-  display: block;
-  color: #842029;
-  background: #f8d7da;
-  border: 1px solid #f1aeb5;
-}
-
-.message.success-message {
-  display: block;
-
-  color: #0f5132;
-
-  background: #d1e7dd;
-
-  border: 1px solid #a3cfbb;
-}
-
-
 .fBody {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        height: fit-content;
-        width: 100%;
-      }
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: fit-content;
+  width: 100%;
+}
 
-
-.helpBox{
+.helpBox {
   display: flex;
   gap: 8px;
   align-items: center;
 }
-.helpBox p{
+
+.helpBox p {
   font-size: 11px;
   font-weight: 700;
   color: var(--mtext);
 }
 
-.pageFooter p{
+.pageFooter p {
   font-size: 12px;
   text-align: center;
   color: var(--stext);
 }
 
-.helpFooter{
+.helpFooter {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
 /* ========================================
-   SPINNER
+  SPINNER
 ======================================== */
 
 .spinner {
@@ -284,4 +263,106 @@ input:focus {
 
 .button.loading #buttonText {
   display: none;
+}
+
+/* ___________verify otp css_____________ */
+
+.page-header strong {
+  display: block;
+  color: var(--mtext);
+  font-size: 14px;
+}
+
+.otpForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.otp-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.otp-input {
+  width: 54px;
+  height: 58px;
+  border: 1px solid var(--stroke);
+  border-radius: 8px;
+  outline: none;
+  background-color: var(--white);
+  color: var(--mtext);
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.otp-input:hover {
+  border-color: var(--stext);
+}
+
+.otp-input:focus {
+  border-color: #1b52c9;
+  outline-color: #1b52c9;
+}
+
+.otp-input.filled {
+  border-color: var(--primary);
+  background: #f8fbff;
+}
+
+/* ========================================
+  TIMER
+======================================== */
+
+.timer-container {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  color: var(--stext);
+  font-size: 13px;
+}
+
+.timer-container span {
+  color: var(--stext);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.timer-container strong {
+  color: var(--mtext);
+  font-weight: bold;
+}
+
+/* ========================================
+  RESEND
+======================================== */
+
+.resend-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  font-size: 13px;
+  color: var(--stext);
+}
+
+.resend-container button {
+  border: none;
+  background: transparent;
+  color: var(--mtext);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.resend-container button:hover:not(:disabled) {
+  text-decoration: underline;
+}
+
+.resend-timer {
+  color: #8a94a6;
 }
