@@ -141,13 +141,19 @@ input:focus {
   width: 100%;
 }
 
-.button {
-  color: white;
+.button, .alsobutton {
   background-color: var(--smain);
-  border: none;
+  padding: 0px 16px;
   border-radius: 8px;
-  padding: 10px;
+  border-style: none;
+  color: var(--white);
+  font-size: 12px;
+  font-weight: 600;
+  height: 44px;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .button:hover {

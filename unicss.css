@@ -1059,10 +1059,6 @@ img {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 40px 34px;
-  background-color: var(--white);
-  border: 1px solid var(--stroke);
-  border-radius: 14px;
 }
 
 .resetlabelInput {
@@ -1106,7 +1102,7 @@ img {
   font-size: 12px;
   font-weight: 600;
   height: 44px;
-  width: 170px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
