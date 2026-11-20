@@ -349,8 +349,8 @@ a {
 }
 
 .buttonss:hover {
-        background-color: #1b52c9;
-      }
+  background-color: #1b52c9;
+}
 
 /* --------------- HISTORY ------------- */
 
@@ -732,8 +732,8 @@ th {
 }
 
 .abutton:hover {
-        background-color: #1b52c9;
-      }
+  background-color: #1b52c9;
+}
 
 /* ________________________ Election details css __________________ */
 
@@ -860,8 +860,8 @@ img {
 }
 
 .lastSection a button:hover {
-        background-color: #1b52c9;
-      }
+  background-color: #1b52c9;
+}
 
 /* ________________________ Election vote Review css __________________ */
 
@@ -869,7 +869,6 @@ img {
   display: flex;
   justify-content: space-between;
 }
-
 
 .lastSection a .confirm {
   height: 48px;
@@ -956,57 +955,163 @@ img {
 }
 
 .successBodyContent a .confirm:hover {
-        background-color: #1b52c9;
-      }
+  background-color: #1b52c9;
+}
 
-      /* ________________________ Election main result css __________________ */
+/* ________________________ Election main result css __________________ */
 
-      
-    .imgc {
-      display: flex;
-      gap: 16px;
-      align-items: center;
-    }
+.imgc {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
 
-    .mid{
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      width: 100%;
-    }
+.mid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
 
-    .card1 {
-      display: flex;
-      flex-direction: column;
-      gap: 32px;
-      padding: 16px;
-      background-color: var(--white);
-      border: 1px solid var(--stroke);
-      border-radius: 16px;
-    }
+.card1 {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 16px;
+  background-color: var(--white);
+  border: 1px solid var(--stroke);
+  border-radius: 16px;
+}
 
-    .top {
-      display: flex;
-      justify-content: space-between;
-    }
-    .card1 p{
-      font-size: 18px;
-      font-weight: 600;
-      color: var(--mtext);
-    }
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+.card1 p {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--mtext);
+}
 
-    img {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-    }
+img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
 
-    .resultBar {
-      height: fit-content;
-      border-radius: 5px;
-      border: 1px solid var(--stroke);
-      overflow: hidden;
-      width: 100%;
-    }
+.resultBar {
+  height: fit-content;
+  border-radius: 5px;
+  border: 1px solid var(--stroke);
+  overflow: hidden;
+  width: 100%;
+}
 
+/* ________normal forgot password______ */
 
+.resetbodycontainer {
+  align-content: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg);
+  margin: 0px;
+  width: 100%;
+}
+
+.resetHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+}
+.resetuppertext {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--mtext);
+  margin: 0px;
+}
+
+.resetundertext {
+  font-size: 14px;
+  font-weight: normal;
+  color: var(--stext);
+  margin: 0px;
+}
+
+.resetBody {
+    position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: fit-content;
+  gap: 24px;
+  padding: 32px;
+  background-color: inherit;
+  border-radius: 16px;
+  border-color: var(--stroke);
+  box-shadow: 0px 0px 70px #c5cad3;
+  margin: auto;
+}
+
+.resetfields {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 40px 34px;
+  background-color: var(--white);
+  border: 1px solid var(--stroke);
+  border-radius: 14px;
+}
+
+.resetlabelInput {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.resetlabel {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--stext);
+}
+
+.resetinput {
+  font-size: 13px;
+  font-weight: 400;
+  width: 100%;
+  box-sizing: border-box;
+  color: var(--mtext);
+  height: 46px;
+  padding-left: 14px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid var(--stroke);
+}
+
+.resetleast {
+  color: var(--stext);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.resetabutton {
+  background-color: var(--smain);
+  padding: 0px 16px;
+  border-radius: 8px;
+  border-style: none;
+  color: var(--white);
+  font-size: 12px;
+  font-weight: 600;
+  height: 44px;
+  width: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resetabutton:hover {
+  background-color: #1b52c9;
+}
