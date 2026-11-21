@@ -518,9 +518,24 @@ th {
   background-color: #f2f4f7;
 }
 
-.mid,
-.end {
-  width: 200px;
+.midCell,
+.twoTable,
+.endCell {
+  width: 25%;
+    text-align: center;
+}
+
+
+.twoTable {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--stext);
+}
+
+.oneTable {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--mtext);
 }
 
 /* ________________________ Student Result page css __________________ */
