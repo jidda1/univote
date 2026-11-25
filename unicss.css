@@ -921,15 +921,6 @@ img {
 }
 
 /* ________________________ Election vote success css __________________ */
-.successBodyContent {
-  background-color: var(--bg);
-  padding: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: calc(100% - 80px);
-  margin-top: 80px;
-}
 
 .successBodyContent div {
   border-radius: 50%;
@@ -1027,6 +1018,24 @@ img {
   border: 1px solid var(--stroke);
   overflow: hidden;
   width: 100%;
+}
+
+.useless{
+  display: ;
+}
+
+.overlay{
+  background-color: rgb(11, 31, 58, 52%);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  top: 80px;
+  left: 240px;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
 }
 
 
