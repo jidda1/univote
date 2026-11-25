@@ -845,13 +845,20 @@ th {
 
 .candidate {
   display: flex;
-  gap: 12px;
+  justify-content: space-between;
   align-items: center;
   background-color: #f8fafc;
   border: 1px solid var(--stroke);
   padding: 16px;
   border-radius: 12px;
 }
+
+.candidate span{
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
 
 .candidate_name {
   font-size: 16px;
@@ -1021,7 +1028,7 @@ img {
 }
 
 .useless{
-  display: ;
+  display: block;
 }
 
 .overlay{
@@ -1036,6 +1043,25 @@ img {
   right: 0;
   bottom: 0;
   overflow: hidden;
+}
+
+.size{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding:32px 40px ;
+  background-color: var(--white);
+  border: 1px solid var(--stroke);
+  border-radius: 16px;
+  position: absolute;
+  width: 80%;
+  height: 80vh;
+  overflow: scroll;
+  z-index: 3;
+}
+
+.size::-webkit-scrollbar {
+  display: none;
 }
 
 
