@@ -431,6 +431,26 @@ a {
   border-radius: 14px;
   width: fit-content;
 }
+.actionTextUpcoming {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--gtext);
+  background-color: #eaf8ef;
+  height: fit-content;
+  padding: 8px 16px;
+  border-radius: 14px;
+  width: fit-content;
+}
+.actionTextClosed {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--gtext);
+  background-color: #eaf8ef;
+  height: fit-content;
+  padding: 8px 16px;
+  border-radius: 14px;
+  width: fit-content;
+}
 
 /* ________________________ Student election css __________________ */
 
@@ -1028,7 +1048,7 @@ img {
 }
 
 .useless{
-  display: block;
+  display: none;
 }
 
 .overlay{
@@ -1063,5 +1083,6 @@ img {
 .size::-webkit-scrollbar {
   display: none;
 }
+
 
 
