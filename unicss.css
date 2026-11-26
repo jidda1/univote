@@ -1048,7 +1048,7 @@ img {
 }
 
 .useless{
-  display: none;
+  display: block;
 }
 
 .overlay{
